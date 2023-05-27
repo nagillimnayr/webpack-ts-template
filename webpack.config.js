@@ -7,6 +7,9 @@ module.exports = {
     index: './src/index.ts',
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development',
@@ -36,5 +39,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
     clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };
