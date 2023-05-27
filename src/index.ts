@@ -1,5 +1,6 @@
 import './style/style.css';
 import printMe from './print';
+import add from './add';
 
 const main = () => {
   const h1 = document.createElement('h1');
