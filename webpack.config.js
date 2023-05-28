@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     app: './src/index.ts',
   },
-  devtool: 'eval-source-map',
+  devtool: 'inline-source-map',
   devServer: {
     static: './dist',
     hot: true,
